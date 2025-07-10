@@ -34,12 +34,13 @@ function loadLayers(year) {
 
   // Cargar línea de costa
   fetch('data/' + year + '.geojson')
+
     .then(res => res.json())
     .then(data => {
       vectorLayer = L.geoJSON(data, {
         style: {
           color: 'red',
-          weight: 2
+          weight: 5
         }
       }).addTo(map);
     })
