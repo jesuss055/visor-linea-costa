@@ -29,7 +29,7 @@ function loadLayers(year) {
   if (vectorLayer) map.removeLayer(vectorLayer);
 
   // Cargar imagen satelital RGB
-  imageLayer = L.imageOverlay('images/RGB-' + year + '.jpg', imageBounds);
+  imageLayer = L.imageOverlay('images/RGB_' + year + '.jpg', imageBounds);
   imageLayer.addTo(map);
 
   // Cargar línea de costa
