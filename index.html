@@ -17,12 +17,28 @@
   <div id="map"></div>
 
   <!-- Controles para seleccionar el año -->
-  <div id="controls">
-    <label for="yearSelector">Selecciona año:</label>
-    <select id="yearSelector">
-      <!-- Las opciones pueden ser añadidas aquí directamente o desde JS -->
-    </select>
-  </div>
+<div id="controls">
+  <label for="yearSelector">Año base (Antes):</label>
+  <select id="yearSelector"></select>
+  <br>
+  <label>
+    <input type="checkbox" id="toggleImage" checked>
+    Mostrar imagen satelital
+  </label>
+  <br><br>
+
+  <label for="yearComparar">Comparar con (Después):</label>
+  <select id="yearComparar">
+    <option value="">-- Seleccionar --</option>
+  </select>
+  <br>
+  <label>
+    <input type="checkbox" id="toggleComparar">
+    Mostrar segunda línea de costa
+  </label>
+</div>
+
+
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
