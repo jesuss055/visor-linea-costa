@@ -33,20 +33,7 @@ function loadLayers(year) {
   imageLayer.addTo(map);
 
   // Cargar línea de costa
-  fetch('data/' + year + '_LT05.geojson')
-    .then(response => {
-      if (!response.ok) {
-        // Si falla (como en 2004_LE07), intenta con otro sufijo
-        return fetch('data/' + year + '_LE07.geojson');
-      }
-      return response;
-    })
-    .then(response => {
-      if (!response.ok) {
-        return fetch('data/' + year + '_LC08.geojson');
-      }
-      return response;
-    })
+  fetch('data/' + year + '.geojson')
     .then(res => res.json())
     .then(data => {
       vectorLayer = L.geoJSON(data, {
