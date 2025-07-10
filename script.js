@@ -40,7 +40,7 @@ function loadLayers(year) {
       vectorLayer = L.geoJSON(data, {
         style: {
           color: 'red',
-          weight: 5
+          weight: 2
         }
       }).addTo(map);
     })
