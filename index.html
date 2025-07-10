@@ -1,14 +1,31 @@
-<div id="controls">
-  <label for="yearSelector">Selecciona año:</label>
-  <select id="yearSelector">
-    <option value="1986">1986</option>
-    <option value="1993">1993</option>
-    <option value="1997">1997</option>
-    <option value="2004">2004</option>
-    <option value="2007">2007</option>
-    <option value="2011">2011</option>
-    <option value="2016">2016</option>
-    <option value="2021">2021</option>
-    <option value="2025">2025</option>
-  </select>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visor Línea de Costa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 style="text-align: center;">Visor de Línea de Costa</h1>
+
+  <!-- 🔻 Este es el contenedor del mapa -->
+  <div id="map"></div>
+
+  <!-- Controles para seleccionar el año -->
+  <div id="controls">
+    <label for="yearSelector">Selecciona año:</label>
+    <select id="yearSelector">
+      <!-- Las opciones pueden ser añadidas aquí directamente o desde JS -->
+    </select>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
